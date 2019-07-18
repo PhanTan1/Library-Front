@@ -1,0 +1,16 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from 'selenium-webdriver/http';
+import { Observable } from 'rxjs';
+import { Book } from '../domain/book';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class BooksService {
+  URL: string='http://localhost:8080/books'
+
+  constructor(private client: HttpClient) { }
+  public getAllBooks(): Observable<Book[]>{
+    return this.client.get<Book[]>(this.URL);
+  }
+}
