@@ -1,12 +1,31 @@
 <div class="card">
   <div class="card-header">
-    Header
+   <h3> Books List </h3>
   </div>
+
   <div class="card-body">
-    <h4 class="card-title">Title</h4>
-    <p class="card-text">Text</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>pictureUrl</th>
+          <th>Resume</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data">
+          <td > <img [src]= item.pictureUrl
+          [width]=width>
+        </td>
+          <td>{{item.resume}} <ngb-datepicker></ngb-datepicker></td>
+          <td>{{item.price}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+
   </div>
-  <div class="card-footer text-muted">
-    Footer
-  </div>
+
 </div>
