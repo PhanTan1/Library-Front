@@ -7,7 +7,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th>pictureUrl</th>
+          <th>Book</th>
           <th>Resume</th>
           <th>Price</th>
         </tr>
@@ -15,12 +15,11 @@
       <tbody>
         <tr *ngFor="let item of data">
           <td > <img [src]= item.pictureUrl
-          [width]=width>
-        </td>
-          <td>{{item.resume}} <ngb-datepicker></ngb-datepicker></td>
-          <td>{{item.price}}</td>
+            [width]= width
+              > </td>
+              <td>{{item.resume}}</td>
+              <td>{{item.price}}</td>
         </tr>
-
       </tbody>
     </table>
 

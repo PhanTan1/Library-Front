@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BooksListComponent } from './components/books-list/books-list.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { BooksDetailsComponent } from './components/books-details/books-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     FooterComponent,
     BooksListComponent,
     WelcomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BooksDetailsComponent
   ],
   imports: [
     BrowserModule,
