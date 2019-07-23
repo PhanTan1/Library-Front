@@ -7,10 +7,14 @@ import { Book } from '../domain/book';
   providedIn: 'root'
 })
 export class BooksService {
-  URL: string='http://localhost:8080/books'
+  URL: string = 'http://localhost:8080/books';
 
   constructor(private client: HttpClient) { }
   public getAllBooks(): Observable<Book[]>{
     return this.client.get<Book[]>(this.URL);
+  }
+
+  public getBookById(id: number): Observable<Book> {
+    return this.client.get<Book>(this.URL + '/' + id);
   }
 }

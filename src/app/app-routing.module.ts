@@ -1,3 +1,4 @@
+import { CartComponent } from './components/cart/cart.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BooksListComponent } from './components/books-list/books-list.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path:'', component: WelcomeComponent, pathMatch: 'full'},
   {path:'list', component: BooksListComponent},
   {path:'details/:id', component: BooksDetailsComponent},
+  {path: 'cart', component: CartComponent},
   {path:'**', component: NotFoundComponent}
 
 ];

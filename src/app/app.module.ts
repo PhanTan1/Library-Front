@@ -11,6 +11,7 @@ import { BooksListComponent } from './components/books-list/books-list.component
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BooksDetailsComponent } from './components/books-details/books-details.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BooksDetailsComponent } from './components/books-details/books-details.
     BooksListComponent,
     WelcomeComponent,
     NotFoundComponent,
-    BooksDetailsComponent
+    BooksDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

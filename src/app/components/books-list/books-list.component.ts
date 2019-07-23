@@ -10,16 +10,15 @@ import { Book } from 'src/app/domain/book';
 export class BooksListComponent implements OnInit {
 
   data: Book[];
-  width: number =100;
+  width: number = 100;
 
-  constructor(private service:BooksService) { }
+  constructor(private service: BooksService) { }
 
   ngOnInit() {
     this.service.getAllBooks().subscribe(
       reponse => this.data = reponse,
-      erreur => console.log('Attention, il y a l\'erreur: '+erreur)
-
-    );
+      erreur => console.log('Attention, il y a l\'erreur: ' + erreur)
+  );
   }
 
 }
